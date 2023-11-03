@@ -23,3 +23,9 @@ variable "session_duration" {
   type        = number
   default     = 3600
 }
+
+variable "permissions_boundary" {
+  description = "The ARN of the permissions boundary to attach to the role."
+  type        = string
+  default     = "arn:aws:iam::719197435995:policy/TechOpsAccountBoundary"
+}
